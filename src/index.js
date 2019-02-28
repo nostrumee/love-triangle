@@ -15,7 +15,7 @@ module.exports = function getLoveTrianglesCount(preferences = []) {
     let second = preferences[first - 1];
     let third = preferences[second - 1];
 
-    if (i === third - 1 && i !== first -1 && first - 1 !== second - 1) {
+    if (i === third - 1 && i !== first -1) {
       loveTrianglesCount++;
       stateArr[i] = stateArr[first - 1] = stateArr[second - 1] = true;
     }
